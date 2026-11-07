@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en" style="background-color:#06080a">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0c0f" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Bullzar Games — Privacy Policy (all projects, including Bao Boom)." />
+  <link rel="canonical" href="https://bullzargames.github.io/privacy/" />
+  <link rel="icon" type="image/jpeg" href="/images/logo-rast.jpeg" />
+  <title>Privacy Policy — Bullzar Games</title>
+  <style>
+    :root {
+      --bg: #06080a; --panel: #0c1015; --line: #1e2630; --text: #d9dfe7;
+      --text-mid: #a5afbc; --text-dim: #78838f; --accent: #ff6a1a; --accent-soft: #ffb066;
+      --mono: ui-monospace, "SFMono-Regular", "Cascadia Mono", Consolas, monospace;
+      --sans: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 16px; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+    a { color: var(--accent-soft); text-decoration: none; border-bottom: 1px solid rgba(255, 106, 26, 0.35); }
+    a:hover { color: #fff; border-bottom-color: var(--accent); }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 0 24px 96px; }
+    header.top { border-bottom: 1px solid var(--line); background: linear-gradient(180deg, rgba(255, 106, 26, 0.06), transparent); padding: 28px 0 26px; margin-bottom: 40px; position: relative; }
+    .top__inner { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+    .brand { display: inline-flex; align-items: center; gap: 10px; font-family: var(--mono); font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); border: 0; }
+    .brand:hover { color: var(--accent-soft); }
+    h1 { margin: 18px 0 10px; font-size: clamp(1.9rem, 4.4vw, 2.9rem); line-height: 1.15; letter-spacing: -0.02em; }
+    .lead { margin: 0; color: var(--text-mid); max-width: 720px; }
+    .meta { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 8px 22px; font-family: var(--mono); font-size: 12px; color: var(--text-dim); }
+    .lang-switch { position: absolute; top: 28px; right: 24px; }
+    .lang-switch__btn { display: flex; align-items: center; gap: 0.45rem; padding: 0.5rem 0.9rem; border: 1px solid var(--line); border-radius: 999px; background: rgba(255,255,255,0.03); color: var(--text); font: 0.72rem var(--mono); letter-spacing: 0.1em; cursor: pointer; }
+    .lang-switch__btn:hover { border-color: var(--accent); color: var(--accent-soft); }
+    .lang-switch__menu { position: absolute; top: calc(100% + 0.5rem); right: 0; min-width: 170px; margin: 0; padding: 0.4rem; list-style: none; background: linear-gradient(165deg, var(--panel), #080a0d); border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 20px 60px rgba(0,0,0,0.6); z-index: 10; }
+    .lang-switch__option { display: flex; align-items: center; gap: 0.6rem; padding: 0.6rem 0.75rem; border-radius: 6px; cursor: pointer; }
+    .lang-switch__option:hover { background: rgba(255,106,26,0.1); }
+    .lang-switch__option--active { background: rgba(255,106,26,0.12); color: var(--accent-soft); }
+    .lang-switch__code { font-family: var(--mono); font-size: 0.72rem; color: var(--accent); min-width: 28px; }
+    .lang-switch__native { flex: 1; font-size: 0.82rem; color: var(--text); }
+    nav.toc { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 18px 22px; margin: 0 0 44px; }
+    nav.toc p { margin: 0 0 8px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-dim); }
+    nav.toc ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 40px; }
+    nav.toc li { margin: 3px 0; font-size: 0.9rem; break-inside: avoid; }
+    nav.toc a { border: 0; color: var(--text-mid); }
+    nav.toc a:hover { color: var(--accent-soft); }
+    section { padding-top: 8px; scroll-margin-top: 20px; }
+    section + section { margin-top: 34px; padding-top: 34px; border-top: 1px solid var(--line); }
+    h2 { margin: 0 0 12px; font-size: 1.25rem; line-height: 1.35; display: flex; gap: 12px; align-items: baseline; }
+    h2 .num { font-family: var(--mono); font-size: 0.8rem; color: var(--accent); letter-spacing: 0.1em; }
+    h3 { margin: 24px 0 8px; font-size: 1rem; color: #fff; }
+    p { margin: 0 0 12px; }
+    ul, ol { margin: 0 0 14px; padding-left: 22px; }
+    li { margin: 5px 0; }
+    .note { border-left: 2px solid var(--accent); background: rgba(255, 106, 26, 0.06); padding: 12px 16px; border-radius: 0 8px 8px 0; color: var(--text-mid); font-size: 0.94rem; }
+    table { width: 100%; border-collapse: collapse; margin: 8px 0 18px; font-size: 0.93rem; }
+    th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { color: var(--accent-soft); font-weight: 600; font-size: 0.85rem; }
+    code { font-family: var(--mono); font-size: 0.85em; color: var(--accent-soft); }
+    footer.bottom { border-top: 1px solid var(--line); margin-top: 56px; padding-top: 22px; color: var(--text-dim); font-size: 0.82rem; }
+    footer.bottom a { color: var(--text-mid); }
+    .article { display: none; }
+    .article.active { display: block; }
+    @media (max-width: 640px) { nav.toc ol { columns: 1; } body { font-size: 15px; } .wrap { padding-bottom: 64px; } .lang-switch { position: static; margin-top: 14px; } }
+    @media print { body { background: #fff; color: #111; } header.top { background: none; } nav.toc { display: none; } a { color: #111; } .wrap { max-width: none; } }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="top__inner">
+      <a class="brand" href="/">← Bullzar Games</a>
+      <h1 id="title">Privacy Policy</h1>
+      <p class="lead" id="lead">One policy for the Bullzar Games website and all studio games, including Bao Boom.</p>
+      <div class="meta">
+        <span id="metaDate">Effective: November 5, 2026</span>
+        <span>Version: 1.0</span>
+      </div>
+      <div class="lang-switch">
+        <button class="lang-switch__btn" id="langBtn" type="button">
+          <span id="langCode">EN</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <ul class="lang-switch__menu" id="langMenu" style="display:none"></ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <nav class="toc" aria-label="Contents" id="toc"></nav>
+    <div id="content"></div>
+    <footer class="bottom">
+      <p>© 2026 Bullzar Games. <a href="/">Back to site</a></p>
+    </footer>
+  </main>
+
+<script>
+const LOCALES = [
+  { code: 'en', label: 'EN', native: 'English' },
+  { code: 'ru', label: 'RU', native: 'Русский' },
+  { code: 'fr', label: 'FR', native: 'Français' },
+  { code: 'es', label: 'ES', native: 'Español' },
+  { code: 'de', label: 'DE', native: 'Deutsch' },
+  { code: 'zh', label: '中文', native: '中文' },
+];
+
+// Title / lead / meta per locale
+const META = {
+  en: { title: 'Privacy Policy', lead: 'One policy for the Bullzar Games website and all studio games, including Bao Boom.', date: 'Effective: November 5, 2026', toc: 'Contents' },
+  ru: { title: 'Политика конфиденциальности', lead: 'Единая политика для сайта Bullzar Games и всех игр студии, включая Bao Boom.', date: 'Действует с: 5 ноября 2026 г.', toc: 'Содержание' },
+  fr: { title: 'Politique de confidentialité', lead: 'Une politique unique pour le site Bullzar Games et tous les jeux du studio, dont Bao Boom.', date: 'En vigueur le 5 novembre 2026', toc: 'Sommaire' },
+  es: { title: 'Política de privacidad', lead: 'Una política única para el sitio web de Bullzar Games y todos los juegos del estudio, incluido Bao Boom.', date: 'Vigente desde el 5 de noviembre de 2026', toc: 'Contenido' },
+  de: { title: 'Datenschutzerklärung', lead: 'Eine Richtlinie für die Website von Bullzar Games und alle Spiele des Studios, einschließlich Bao Boom.', date: 'Gültig ab 5. November 2026', toc: 'Inhalt' },
+  zh: { title: '隐私政策', lead: '适用于 Bullzar Games 网站及工作室所有游戏（包括 Bao Boom）的统一政策。', date: '生效日期：2026 年 11 月 5 日', toc: '目录' },
+};
+
+// Section titles per locale
+const SECTIONS = {
+  en: ['General','Who we are','Information we process','Cookies and local storage','Legal bases (GDPR / UK GDPR)','Sharing with third parties','Retention','Your rights','Children','International transfers','Security','Changes','Contact'],
+  ru: ['Общие положения','Кто мы','Какие данные мы обрабатываем','Cookies и локальное хранилище','Правовые основания (GDPR / UK GDPR)','Передача третьим лицам','Сроки хранения','Ваши права','Дети','Международная передача','Безопасность','Изменения','Контакты'],
+  fr: ['Généralités','Qui sommes-nous','Données traitées','Cookies et stockage local','Bases légales (RGPD)','Partage avec des tiers','Conservation','Vos droits','Enfants','Transferts internationaux','Sécurité','Modifications','Contact'],
+  es: ['General','Quiénes somos','Datos que tratamos','Cookies y almacenamiento local','Bases legales (RGPD)','Cesión a terceros','Conservación','Sus derechos','Menores','Transferencias internacionales','Seguridad','Cambios','Contacto'],
+  de: ['Allgemeines','Wer wir sind','Verarbeitete Daten','Cookies und lokaler Speicher','Rechtsgrundlagen (DSGVO)','Weitergabe an Dritte','Speicherdauer','Ihre Rechte','Kinder','Internationale Übermittlung','Sicherheit','Änderungen','Kontakt'],
+  zh: ['概述','我们是谁','我们处理的信息','Cookie 与本地存储','法律依据（GDPR）','与第三方共享','保留期限','您的权利','儿童','国际传输','安全','变更','联系'],
+};
+
+// Content (article inner HTML) per locale. Sections use <section id="sN">.
+const CONTENT = {};
+
+function sec(num, title, body) {
+  return '<section id="s' + num + '"><h2><span class="num">' + String(num).padStart(2,'0') + '</span> ' + title + '</h2>' + body + '</section>';
+}
+
+// We'll build CONTENT for each locale. To keep manageable, store as templates with placeholders? Instead, inline HTML strings.
+
+CONTENT.en = `
+${sec(1,'General','<p>This Privacy Policy explains how Bullzar Games (“we”, “us”) handles information related to the <a href="https://bullzargames.github.io/">bullzargames.github.io</a> website, the studio’s games and other projects (including Bao Boom), and any related pages. This single policy applies to all Bullzar Games projects.</p><p>By using the website or a game, you agree to the practices described below. If you do not agree, please do not use the website or the games.</p>')}
+${sec(2,'Who we are','<p>Bullzar Games is an independent studio (a solo developer). We act as the controller of the information we process ourselves. For privacy questions or data requests, contact <a href="mailto:bullzar.games@proton.me">bullzar.games@proton.me</a>.</p>')}
+${sec(3,'Information we process','<h3>3.1. Website</h3><ul><li>We do not create accounts and do not operate forms that send data to our server. The contact form opens your email app; a message is sent only if you send it yourself.</li><li><strong>GitHub Pages hosting</strong> automatically processes technical data such as IP address, date and time of the request, requested URL, User-Agent and referrer to deliver pages and prevent abuse. GitHub processes this data under its own policy.</li><li><strong>Cloudflare Web Analytics</strong> provides aggregated, anonymized statistics (page views, referrers, country, device type). It does not use cookies and does not track you across websites.</li><li><strong>Cloudflare Turnstile</strong> verifies that the contact form is filled in by a human. It processes your IP address and technical browser signals.</li><li><strong>Browser local storage</strong> — <code>sessionStorage</code> (key <code>spaPath</code>) for in-site navigation and <code>localStorage</code> (key <code>site-locale</code>) for your language choice. This data stays on your device.</li></ul><h3>3.2. Games (Windows, Linux, macOS, Android, Web)</h3><ul><li>Games require no account and do not send us personal data.</li><li>Settings, progress, achievements and high scores are stored <strong>locally on your device</strong>. You can remove them through your operating system or browser (clear app/site data).</li><li>In the web build hosted on our page, analytics is disabled. If optional anonymous statistics are enabled in the game settings and supported by a specific build, anonymized events (launch, level completion, errors) are sent without your name, email or advertising identifiers.</li><li>Builds for game platforms (for example, Yandex Games or CrazyGames) may use the platform SDK, ads and cloud saves. Such data is processed by the platform under its own policy.</li></ul><h3>3.3. itch.io and other stores</h3><p>Downloads, purchases, payments and accounts are handled by itch.io and other stores under their own policies. We may see aggregate statistics (for example, download or sales counts), but we do not receive your card details and have no access to your store account. If you email us, we receive your address and the content of your message.</p><h3>3.4. Email</h3><p>If you write to <a href="mailto:bullzar.games@proton.me">bullzar.games@proton.me</a>, we receive your address, any name you provide and the content of your message. We use it only to reply and provide support.</p>')}
+${sec(4,'Cookies and local storage','<p>We do not use advertising or tracking cookies. Cloudflare Turnstile may set technical cookies required to secure the form. Third-party sites we link to (itch.io, GitHub, Cloudflare) may use their own cookies as described in their policies.</p><table><thead><tr><th>Item</th><th>Type</th><th>Purpose</th></tr></thead><tbody><tr><td><code>spaPath</code> (sessionStorage)</td><td>Functional</td><td>Returns you to the intended page</td></tr><tr><td><code>site-locale</code> (localStorage)</td><td>Functional</td><td>Remembers your language</td></tr><tr><td>Game saves</td><td>Local</td><td>Progress, settings, achievements</td></tr><tr><td>Turnstile</td><td>Technical</td><td>Bot protection for the form</td></tr></tbody></table>')}
+${sec(5,'Legal bases (GDPR / UK GDPR)','<ul><li><strong>Legitimate interests</strong> — operating, securing and improving the website and games.</li><li><strong>Consent</strong> — where you enable optional analytics or contact us on your own initiative.</li><li><strong>Legal obligation</strong> — where processing is required by law.</li></ul>')}
+${sec(6,'Sharing with third parties','<p>We do not sell or rent personal data. Data may be processed by providers that run the website and distribute the games:</p><ul><li><strong>GitHub</strong> — website hosting (<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">policy</a>).</li><li><strong>Cloudflare</strong> — web analytics and Turnstile (<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">policy</a>).</li><li><strong>itch.io</strong> — game distribution and payments (<a href="https://itch.io/docs/legal/privacy-policy" target="_blank" rel="noopener">policy</a>).</li><li><strong>Proton Mail</strong> — email (<a href="https://proton.me/legal/privacy" target="_blank" rel="noopener">policy</a>).</li></ul><p>We may disclose information where required by law, a court order, or to protect rights and safety.</p>')}
+${sec(7,'Retention','<ul><li>Technical logs — according to the policies of the hosting and analytics providers.</li><li>Emails — as long as needed to reply and provide support, then deleted.</li><li>Local data — until you delete it on your device.</li></ul>')}
+${sec(8,'Your rights','<p>Depending on your jurisdiction, you may have the right to access, correct, delete or restrict your data, object to processing, receive a portable copy, withdraw consent, and lodge a complaint with a supervisory authority. To make a request, email <a href="mailto:bullzar.games@proton.me">bullzar.games@proton.me</a>; we will respond within a reasonable time.</p><p>For data processed by itch.io (account, purchases), please contact itch.io directly.</p>')}
+${sec(9,'Children','<p>Our games are suitable for players of any age; we do not knowingly collect personal data from children and do not ask for age. If you believe a child has provided us with personal data, contact us and we will delete it.</p>')}
+${sec(10,'International transfers','<p>Service providers may process data outside your country. Such transfers rely on legally recognized safeguards (for example, standard contractual clauses) and are limited to what is necessary to operate the services.</p>')}
+${sec(11,'Security','<p>We take reasonable technical and organizational measures to protect information. However, no method of transmission or storage is completely secure.</p>')}
+${sec(12,'Changes','<p>The current version is always available on this page; the update date is shown at the top. For material changes, we will publish the updated policy here and provide additional notice where required.</p>')}
+${sec(13,'Contact','<p>For any privacy questions: <a href="mailto:bullzar.games@proton.me">bullzar.games@proton.me</a>.</p>')}
+`;
+
+// Russian
+CONTENT.ru = `
+${sec(1,'Общие положения','<p>Настоящая Политика конфиденциальности описывает, как Bullzar Games («мы», «нас») обрабатывает информацию, связанную с сайтом <a href="https://bullzargames.github.io/">bullzargames.github.io</a>, играми и другими проектами студии (включая Bao Boom) и любыми связанными страницами. Политика едина для всех проектов Bullzar Games.</p><p>Используя сайт или игру, вы соглашаетесь с практиками, описанными ниже. Если вы не согласны с политикой, пожалуйста, не используйте сайт и игры.</p>')}
+${sec(2,'Кто мы','<p>Bullzar Games — независимая студия (один разработчик). Мы выступаем оператором данных в отношении информации, которую обрабатываем сами. По вопросам конфиденциальности и запросам о ваших данных пишите на <a href="mailto:bullzar.games@proton.me">bullzar.games@proton.me</a>.</p>')}
+${sec(3,'Какие данные мы обрабатываем','<h3>3.1. Сайт</h3><ul><li>Мы не создаём учётные записи и не принимаем формы, которые отправляют данные на наш сервер. Форма обратной связи открывает ваш почтовый клиент; письмо уходит только если вы сами отправите его.</li><li><strong>Хостинг GitHub Pages</strong> автоматически обрабатывает технические данные: IP-адрес, дату и время запроса, запрошенный URL, User-Agent и referrer — для доставки страниц и защиты от злоупотреблений. Эти данные обрабатываются GitHub согласно его политике.</li><li><strong>Cloudflare Web Analytics</strong> — агрегированная обезличенная статистика (просмотры страниц, источники переходов, страна, тип устройства). Сервис не использует cookies и не отслеживает вас между сайтами.</li><li><strong>Cloudflare Turnstile</strong> — проверка, что форму обратной связи заполняет человек. При проверке обрабатываются IP-адрес и технические сигналы браузера.</li><li><strong>Локальное хранилище браузера</strong> — <code>sessionStorage</code> (ключ <code>spaPath</code>) для навигации внутри сайта и <code>localStorage</code> (ключ <code>site-locale</code>) для выбранного языка. Эти данные остаются на вашем устройстве.</li></ul><h3>3.2. Игры (Windows, Linux, macOS, Android, Web)</h3><ul><li>Игры не требуют учётной записи и не отправляют нам персональные данные.</li><li>Настройки, прогресс, достижения и рекорды сохраняются <strong>локально на вашем устройстве</strong>. Удалить их можно средствами ОС или браузера (очистка данных приложения/сайта).</li><li>В веб-сборке на нашей странице аналитика отключена. Если в настройках игры включена необязательная анонимная статистика и конкретная сборка её поддерживает, отправляются обезличенные события (запуск, прохождение уровней, ошибки) без имени, e-mail и рекламных идентификаторов.</li><li>В версиях для игровых площадок (например, Яндекс Игры, CrazyGames) могут использоваться SDK площадки, показ рекламы и облачные сохранения. Такие данные обрабатываются площадкой по её собственной политике.</li></ul><h3>3.3. itch.io и другие магазины</h3><p>Загрузка, покупка, оплата и учётная запись обрабатываются itch.io и другими магазинами по их политикам. Мы можем видеть агрегированную статистику (например, число загрузок или продаж), но не получаем данные вашей банковской карты и не имеем доступа к вашему аккаунту магазина. Если вы напишете нам, мы получим ваш адрес и текст сообщения.</p><h3>3.4. Электронная почта</h3><p>Если вы пишете на <a href="mailto:bullzar.games@proton.me">bullzar.games@proton.me</a>, мы получаем ваш адрес, указанное вами имя и содержимое письма. Используем их только для ответа и поддержки.</p>')}
+${sec(4,'Cookies и локальное хранилище','<p>Мы не используем рекламные или отслеживающие cookies. Cloudflare Turnstile может устанавливать технические cookies, необходимые для проверки безопасности формы. Сторонние сайты, на которые мы ссылаемся (itch.io, GitHub, Cloudflare), могут использовать собственные cookies — их обработка регулируется политиками этих сайтов.</p><table><thead><tr><th>Что</th><th>Тип</th><th>Назначение</th></tr></thead><tbody><tr><td><code>spaPath</code> (sessionStorage)</td><td>Функциональное</td><td>Возврат на нужную страницу сайта</td></tr><tr><td><code>site-locale</code> (localStorage)</td><td>Функциональное</td><td>Запоминание выбранного языка</td></tr><tr><td>Сохранения игр</td><td>Локальное</td><td>Прогресс, настройки, достижения</td></tr><tr><td>Turnstile</td><td>Техническое</td><td>Защита формы от ботов</td></tr></tbody></table>')}
+${sec(5,'Правовые основания (GDPR / UK GDPR)','<ul><li><strong>Законный интерес</strong> — работа, безопасность и улучшение сайта и игр.</li><li><strong>Согласие</strong> — если вы включили необязательную аналитику или обратились к нам по своей инициативе.</li><li><strong>Юридическая обязанность</strong> — когда обработка требуется законом.</li></ul>')}
+${sec(6,'Передача третьим лицам','<p>Мы не продаём и не сдаём в аренду персональные данные. Данные могут обрабатываться поставщиками, которые обеспечивают работу сайта и распространение игр:</p><ul><li><strong>GitHub</strong> — хостинг сайта (<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">политика</a>).</li><li><strong>Cloudflare</strong> — веб-аналитика и Turnstile (<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">политика</a>).</li><li><strong>itch.io</strong> — распространение игр и приём платежей (<a href="https://itch.io/docs/legal/privacy-policy" target="_blank" rel="noopener">политика</a>).</li><li><strong>Proton Mail</strong> — электронная почта (<a href="https://proton.me/legal/privacy" target="_blank" rel="noopener">политика</a>).</li></ul><p>Мы можем раскрыть информацию, если это требуется законом, судебным актом или для защиты прав и безопасности.</p>')}
+${sec(7,'Сроки хранения','<ul><li>Технические журналы — в соответствии с политикой провайдеров хостинга и аналитики.</li><li>Письма — столько, сколько необходимо для ответа и поддержки, затем удаляются.</li><li>Локальные данные — до тех пор, пока вы сами не удалите их на устройстве.</li></ul>')}
+${sec(8,'Ваши права','<p>В зависимости от вашей юрисдикции вы можете иметь право на доступ к своим данным, их исправление, удаление, ограничение обработки, возражение против обработки, переносимость данных и отзыв согласия, а также право подать жалобу в надзорный орган. Для запросов напишите на <a href="mailto:bullzar.games@proton.me">bullzar.games@proton.me</a>; мы ответим в разумный срок.</p><p>По данным, которые обрабатывает itch.io (аккаунт, покупки), обращайтесь напрямую в itch.io.</p>')}
+${sec(9,'Дети','<p>Наши игры подходят для игроков любого возраста; мы не собираем персональные данные детей специально и не просим указывать возраст. Если вы считаете, что ребёнок передал нам персональные данные, напишите — мы удалим их.</p>')}
+${sec(10,'Международная передача данных','<p>Поставщики услуг могут обрабатывать данные за пределами вашей страны. Такая передача осуществляется с применением предусмотренных законом гарантий (например, стандартных договорных условий) и в объёме, необходимом для работы сервисов.</p>')}
+${sec(11,'Безопасность','<p>Мы принимаем разумные технические и организационные меры для защиты информации. При этом ни один способ передачи или хранения данных не гарантирует абсолютную безопасность.</p>')}
+${sec(12,'Изменения','<p>Актуальная версия всегда доступна на этой странице; дата обновления указана вверху. При существенных изменениях мы опубликуем обновлённую политику здесь и, если требуется, уведомим дополнительно.</p>')}
+${sec(13,'Контакты','<p>По любым вопросам о конфиденциальности: <a href="mailto:bullzar.games@proton.me">bullzar.games@proton.me</a>.</p>')}
+`;
+
+// French
+CONTENT.fr = `
+${sec(1,'Généralités','<p>Cette politique de confidentialité explique comment Bullzar Games (« nous ») traite les informations liées au site <a href="https://bullzargames.github.io/">bullzargames.github.io</a>, aux jeux et autres projets du studio (dont Bao Boom) et aux pages associées. Une seule politique s’applique à tous les projets Bullzar Games.</p><p>En utilisant le site ou un jeu, vous acceptez les pratiques décrites ci-dessous. Si vous n’êtes pas d’accord, veuillez ne pas utiliser le site ni les jeux.</p>')}
+${sec(2,'Qui sommes-nous','<p>Bullzar Games est un studio indépendant (développeur solo). Nous sommes responsables des données que nous traitons nous-mêmes. Pour toute question de confidentialité ou demande relative à vos données, écrivez à <a href="mailto:bullzar.games@proton.me">bullzar.games@proton.me</a>.</p>')}
+${sec(3,'Données traitées','<h3>3.1. Site web</h3><ul><li>Nous ne créons pas de comptes et n’exploitons pas de formulaires envoyant des données à notre serveur. Le formulaire de contact ouvre votre client de messagerie ; un message n’est envoyé que si vous l’envoyez vous-même.</li><li><strong>Hébergement GitHub Pages</strong> traite automatiquement des données techniques (adresse IP, date et heure de la requête, URL demandée, User-Agent, référent) pour délivrer les pages et prévenir les abus.</li><li><strong>Cloudflare Web Analytics</strong> fournit des statistiques agrégées et anonymisées (pages vues, référents, pays, type d’appareil). Il n’utilise pas de cookies et ne vous suit pas d’un site à l’autre.</li><li><strong>Cloudflare Turnstile</strong> vérifie qu’un humain remplit le formulaire de contact. Il traite votre adresse IP et des signaux techniques du navigateur.</li><li><strong>Stockage local du navigateur</strong> — <code>sessionStorage</code> (clé <code>spaPath</code>) pour la navigation interne et <code>localStorage</code> (clé <code>site-locale</code>) pour le choix de langue. Ces données restent sur votre appareil.</li></ul><h3>3.2. Jeux (Windows, Linux, macOS, Android, Web)</h3><ul><li>Les jeux ne requièrent aucun compte et ne nous envoient pas de données personnelles.</li><li>Paramètres, progression, succès et records sont stockés <strong>localement sur votre appareil</strong>. Vous pouvez les supprimer via le système ou le navigateur.</li><li>Dans la version web hébergée sur notre page, l’analytique est désactivée. Si les statistiques anonymes facultatives sont activées dans les réglages du jeu et prises en charge par la version, des événements anonymisés (lancement, niveaux terminés, erreurs) sont envoyés sans nom, e-mail ni identifiants publicitaires.</li><li>Les versions pour les plateformes de jeu (par ex. Yandex Games, CrazyGames) peuvent utiliser le SDK de la plateforme, la publicité et la sauvegarde cloud. Ces données sont traitées par la plateforme selon sa propre politique.</li></ul><h3>3.3. itch.io et autres boutiques</h3><p>Téléchargements, achats, paiements et comptes sont gérés par itch.io et les autres boutiques selon leurs politiques. Nous pouvons voir des statistiques agrégées (nombre de téléchargements ou de ventes), mais ne recevons pas vos données bancaires et n’avons pas accès à votre compte boutique. Si vous nous écrivez, nous recevons votre adresse et le contenu du message.</p><h3>3.4. E-mail</h3><p>Si vous écrivez à <a href="mailto:bullzar.games@proton.me">bullzar.games@proton.me</a>, nous recevons votre adresse, le nom que vous indiquez et le contenu du message. Nous les utilisons uniquement pour répondre et assurer le support.</p>')}
+${sec(4,'Cookies et stockage local','<p>Nous n’utilisons pas de cookies publicitaires ou de suivi. Cloudflare Turnstile peut déposer des cookies techniques nécessaires à la sécurisation du formulaire. Les sites tiers vers lesquels nous renvoyons (itch.io, GitHub, Cloudflare) peuvent utiliser leurs propres cookies selon leurs politiques.</p><table><thead><tr><th>Élément</th><th>Type</th><th>Finalité</th></tr></thead><tbody><tr><td><code>spaPath</code> (sessionStorage)</td><td>Fonctionnel</td><td>Vous ramène à la page prévue</td></tr><tr><td><code>site-locale</code> (localStorage)</td><td>Fonctionnel</td><td>Mémorise votre langue</td></tr><tr><td>Sauvegardes de jeu</td><td>Local</td><td>Progression, réglages, succès</td></tr><tr><td>Turnstile</td><td>Technique</td><td>Protection anti-bot du formulaire</td></tr></tbody></table>')}
+${sec(5,'Bases légales (RGPD / UK GDPR)','<ul><li><strong>Intérêts légitimes</strong> — exploitation, sécurisation et amélioration du site et des jeux.</li><li><strong>Consentement</strong> — si vous activez l’analytique facultative ou nous contactez de votre propre initiative.</li><li><strong>Obligation légale</strong> — lorsque le traitement est requis par la loi.</li></ul>')}
+${sec(6,'Partage avec des tiers','<p>Nous ne vendons ni ne louons de données personnelles. Les données peuvent être traitées par les prestataires qui font fonctionner le site et distribuent les jeux :</p><ul><li><strong>GitHub</strong> — hébergement du site (<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">politique</a>).</li><li><strong>Cloudflare</strong> — analytique web et Turnstile (<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">politique</a>).</li><li><strong>itch.io</strong> — distribution des jeux et paiements (<a href="https://itch.io/docs/legal/privacy-policy" target="_blank" rel="noopener">politique</a>).</li><li><strong>Proton Mail</strong> — e-mail (<a href="https://proton.me/legal/privacy" target="_blank" rel="noopener">politique</a>).</li></ul><p>Nous pouvons divulguer des informations lorsque la loi, une décision de justice ou la protection des droits et de la sécurité l’exigent.</p>')}
+${sec(7,'Conservation','<ul><li>Journaux techniques — selon les politiques des prestataires d’hébergement et d’analytique.</li><li>E-mails — aussi longtemps que nécessaire pour répondre et assurer le support, puis supprimés.</li><li>Données locales — jusqu’à ce que vous les supprimiez sur votre appareil.</li></ul>')}
+${sec(8,'Vos droits','<p>Selon votre juridiction, vous pouvez avoir le droit d’accéder à vos données, de les rectifier, les effacer, en restreindre le traitement, de vous y opposer, d’en recevoir une copie portable, de retirer votre consentement et de déposer une plainte auprès d’une autorité de contrôle. Pour toute demande, écrivez à <a href="mailto:bullzar.games@proton.me">bullzar.games@proton.me</a> ; nous répondrons dans un délai raisonnable.</p><p>Pour les données traitées par itch.io (compte, achats), contactez itch.io directement.</p>')}
+${sec(9,'Enfants','<p>Nos jeux conviennent aux joueurs de tout âge ; nous ne collectons pas sciemment de données personnelles d’enfants et ne demandons pas d’âge. Si vous pensez qu’un enfant nous a transmis des données personnelles, contactez-nous et nous les supprimerons.</p>')}
+${sec(10,'Transferts internationaux','<p>Les prestataires de services peuvent traiter des données en dehors de votre pays. Ces transferts reposent sur des garanties reconnues par la loi (par exemple, les clauses contractuelles types) et sont limités à ce qui est nécessaire au fonctionnement des services.</p>')}
+${sec(11,'Sécurité','<p>Nous prenons des mesures techniques et organisationnelles raisonnables pour protéger les informations. Toutefois, aucune méthode de transmission ou de stockage n’est totalement sûre.</p>')}
+${sec(12,'Modifications','<p>La version actuelle est toujours disponible sur cette page ; la date de mise à jour est indiquée en haut. En cas de modification importante, nous publierons la politique mise à jour ici et donnerons un avis complémentaire si nécessaire.</p>')}
+${sec(13,'Contact','<p>Pour toute question relative à la confidentialité : <a href="mailto:bullzar.games@proton.me">bullzar.games@proton.me</a>.</p>')}
+`;
+
+// Spanish
+CONTENT.es = `
+${sec(1,'General','<p>Esta política de privacidad explica cómo Bullzar Games («nosotros») trata la información relacionada con el sitio web <a href="https://bullzargames.github.io/">bullzargames.github.io</a>, los juegos y otros proyectos del estudio (incluido Bao Boom) y las páginas asociadas. Esta única política se aplica a todos los proyectos de Bullzar Games.</p><p>Al usar el sitio web o un juego, aceptas las prácticas descritas a continuación. Si no estás de acuerdo, por favor no uses el sitio ni los juegos.</p>')}
+${sec(2,'Quiénes somos','<p>Bullzar Games es un estudio independiente (un desarrollador en solitario). Somos responsables de la información que tratamos nosotros mismos. Para preguntas de privacidad o solicitudes sobre tus datos, escribe a <a href="mailto:bullzar.games@proton.me">bullzar.games@proton.me</a>.</p>')}
+${sec(3,'Datos que tratamos','<h3>3.1. Sitio web</h3><ul><li>No creamos cuentas ni operamos formularios que envíen datos a nuestro servidor. El formulario de contacto abre tu cliente de correo; el mensaje solo se envía si tú lo envías.</li><li><strong>Alojamiento en GitHub Pages</strong> procesa automáticamente datos técnicos (dirección IP, fecha y hora de la solicitud, URL solicitada, User-Agent y referente) para entregar las páginas y prevenir abusos.</li><li><strong>Cloudflare Web Analytics</strong> ofrece estadísticas agregadas y anónimas (visitas a páginas, referentes, país, tipo de dispositivo). No usa cookies ni te rastrea entre sitios.</li><li><strong>Cloudflare Turnstile</strong> verifica que un humano rellene el formulario de contacto. Procesa tu dirección IP y señales técnicas del navegador.</li><li><strong>Almacenamiento local del navegador</strong> — <code>sessionStorage</code> (clave <code>spaPath</code>) para la navegación interna y <code>localStorage</code> (clave <code>site-locale</code>) para el idioma elegido. Estos datos permanecen en tu dispositivo.</li></ul><h3>3.2. Juegos (Windows, Linux, macOS, Android, Web)</h3><ul><li>Los juegos no requieren cuenta y no nos envían datos personales.</li><li>Los ajustes, el progreso, los logros y los récords se guardan <strong>localmente en tu dispositivo</strong>. Puedes eliminarlos mediante el sistema operativo o el navegador.</li><li>En la versión web alojada en nuestra página, la analítica está desactivada. Si las estadísticas anónimas opcionales están activadas en los ajustes del juego y son compatibles con la versión, se envían eventos anonimizados (inicio, niveles completados, errores) sin nombre, correo ni identificadores publicitarios.</li><li>Las versiones para plataformas de juego (por ejemplo, Yandex Games o CrazyGames) pueden usar el SDK de la plataforma, anuncios y guardado en la nube. Esos datos los trata la plataforma según su propia política.</li></ul><h3>3.3. itch.io y otras tiendas</h3><p>Las descargas, compras, pagos y cuentas las gestiona itch.io y otras tiendas según sus políticas. Podemos ver estadísticas agregadas (por ejemplo, número de descargas o ventas), pero no recibimos los datos de tu tarjeta ni tenemos acceso a tu cuenta de la tienda. Si nos escribes, recibimos tu dirección y el contenido del mensaje.</p><h3>3.4. Correo electrónico</h3><p>Si escribes a <a href="mailto:bullzar.games@proton.me">bullzar.games@proton.me</a>, recibimos tu dirección, el nombre que indiques y el contenido del mensaje. Solo los usamos para responder y dar soporte.</p>')}
+${sec(4,'Cookies y almacenamiento local','<p>No usamos cookies publicitarias ni de seguimiento. Cloudflare Turnstile puede establecer cookies técnicas necesarias para asegurar el formulario. Los sitios de terceros a los que enlazamos (itch.io, GitHub, Cloudflare) pueden usar sus propias cookies según sus políticas.</p><table><thead><tr><th>Elemento</th><th>Tipo</th><th>Finalidad</th></tr></thead><tbody><tr><td><code>spaPath</code> (sessionStorage)</td><td>Funcional</td><td>Te devuelve a la página prevista</td></tr><tr><td><code>site-locale</code> (localStorage)</td><td>Funcional</td><td>Recuerda tu idioma</td></tr><tr><td>Partidas guardadas</td><td>Local</td><td>Progreso, ajustes, logros</td></tr><tr><td>Turnstile</td><td>Técnico</td><td>Protección anti-bots del formulario</td></tr></tbody></table>')}
+${sec(5,'Bases legales (RGPD / UK GDPR)','<ul><li><strong>Intereses legítimos</strong> — funcionamiento, seguridad y mejora del sitio web y los juegos.</li><li><strong>Consentimiento</strong> — cuando activas la analítica opcional o nos contactas por iniciativa propia.</li><li><strong>Obligación legal</strong> — cuando el tratamiento es exigido por la ley.</li></ul>')}
+${sec(6,'Cesión a terceros','<p>No vendemos ni alquilamos datos personales. Los datos pueden ser tratados por los proveedores que operan el sitio y distribuyen los juegos:</p><ul><li><strong>GitHub</strong> — alojamiento del sitio (<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">política</a>).</li><li><strong>Cloudflare</strong> — analítica web y Turnstile (<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">política</a>).</li><li><strong>itch.io</strong> — distribución de juegos y pagos (<a href="https://itch.io/docs/legal/privacy-policy" target="_blank" rel="noopener">política</a>).</li><li><strong>Proton Mail</strong> — correo (<a href="https://proton.me/legal/privacy" target="_blank" rel="noopener">política</a>).</li></ul><p>Podemos divulgar información cuando lo exija la ley, una orden judicial o para proteger derechos y seguridad.</p>')}
+${sec(7,'Conservación','<ul><li>Registros técnicos — según las políticas de los proveedores de alojamiento y analítica.</li><li>Correos — el tiempo necesario para responder y dar soporte, y luego se eliminan.</li><li>Datos locales — hasta que los elimines en tu dispositivo.</li></ul>')}
+${sec(8,'Sus derechos','<p>Según tu jurisdicción, puedes tener derecho a acceder a tus datos, rectificarlos, suprimirlos, limitar su tratamiento, oponerte, recibir una copia portable, retirar el consentimiento y presentar una reclamación ante una autoridad de control. Para hacer una solicitud, escribe a <a href="mailto:bullzar.games@proton.me">bullzar.games@proton.me</a>; responderemos en un plazo razonable.</p><p>Para los datos tratados por itch.io (cuenta, compras), contacta directamente con itch.io.</p>')}
+${sec(9,'Menores','<p>Nuestros juegos son aptos para jugadores de cualquier edad; no recopilamos conscientemente datos personales de menores ni pedimos la edad. Si crees que un menor nos ha proporcionado datos personales, contáctanos y los eliminaremos.</p>')}
+${sec(10,'Transferencias internacionales','<p>Los proveedores de servicios pueden tratar datos fuera de tu país. Dichas transferencias se basan en garantías reconocidas por la ley (por ejemplo, cláusulas contractuales estándar) y se limitan a lo necesario para operar los servicios.</p>')}
+${sec(11,'Seguridad','<p>Tomamos medidas técnicas y organizativas razonables para proteger la información. Sin embargo, ningún método de transmisión o almacenamiento es completamente seguro.</p>')}
+${sec(12,'Cambios','<p>La versión actual está siempre disponible en esta página; la fecha de actualización se muestra arriba. En caso de cambios importantes, publicaremos la política actualizada aquí y, si es necesario, te avisaremos adicionalmente.</p>')}
+${sec(13,'Contacto','<p>Para cualquier pregunta sobre privacidad: <a href="mailto:bullzar.games@proton.me">bullzar.games@proton.me</a>.</p>')}
+`;
+
+// German
+CONTENT.de = `
+${sec(1,'Allgemeines','<p>Diese Datenschutzerklärung erläutert, wie Bullzar Games («wir») mit Informationen umgeht, die mit der Website <a href="https://bullzargames.github.io/">bullzargames.github.io</a>, den Spielen und anderen Projekten des Studios (einschließlich Bao Boom) sowie zugehörigen Seiten verbunden sind. Diese eine Richtlinie gilt für alle Projekte von Bullzar Games.</p><p>Durch die Nutzung der Website oder eines Spiels stimmen Sie den unten beschriebenen Praktiken zu. Wenn Sie nicht einverstanden sind, nutzen Sie bitte weder die Website noch die Spiele.</p>')}
+${sec(2,'Wer wir sind','<p>Bullzar Games ist ein unabhängiges Studio (Solo-Entwickler). Wir sind für die Informationen verantwortlich, die wir selbst verarbeiten. Bei Fragen zum Datenschutz oder Anfragen zu Ihren Daten schreiben Sie an <a href="mailto:bullzar.games@proton.me">bullzar.games@proton.me</a>.</p>')}
+${sec(3,'Verarbeitete Daten','<h3>3.1. Website</h3><ul><li>Wir erstellen keine Konten und betreiben keine Formulare, die Daten an unseren Server senden. Das Kontaktformular öffnet Ihren E-Mail-Client; eine Nachricht wird nur gesendet, wenn Sie sie selbst senden.</li><li><strong>Hosting bei GitHub Pages</strong> verarbeitet automatisch technische Daten (IP-Adresse, Datum und Uhrzeit der Anfrage, angeforderte URL, User-Agent, Referrer) zur Auslieferung der Seiten und zur Missbrauchsprävention.</li><li><strong>Cloudflare Web Analytics</strong> liefert aggregierte, anonymisierte Statistiken (Seitenaufrufe, Referrer, Land, Gerätetyp). Es verwendet keine Cookies und verfolgt Sie nicht über Websites hinweg.</li><li><strong>Cloudflare Turnstile</strong> prüft, dass ein Mensch das Kontaktformular ausfüllt. Es verarbeitet Ihre IP-Adresse und technische Browsersignale.</li><li><strong>Lokaler Browserspeicher</strong> — <code>sessionStorage</code> (Schlüssel <code>spaPath</code>) für die interne Navigation und <code>localStorage</code> (Schlüssel <code>site-locale</code>) für die Sprachwahl. Diese Daten verbleiben auf Ihrem Gerät.</li></ul><h3>3.2. Spiele (Windows, Linux, macOS, Android, Web)</h3><ul><li>Spiele erfordern kein Konto und senden uns keine personenbezogenen Daten.</li><li>Einstellungen, Fortschritt, Erfolge und Highscores werden <strong>lokal auf Ihrem Gerät</strong> gespeichert. Sie können sie über das Betriebssystem oder den Browser entfernen.</li><li>Im Web-Build auf unserer Seite ist die Analyse deaktiviert. Wenn in den Spieleinstellungen optionale anonyme Statistiken aktiviert sind und von einem bestimmten Build unterstützt werden, werden anonymisierte Ereignisse (Start, abgeschlossene Level, Fehler) ohne Namen, E-Mail oder Werbekennungen gesendet.</li><li>Builds für Spieleplattformen (z. B. Yandex Games, CrazyGames) können das Plattform-SDK, Werbung und Cloud-Saves verwenden. Solche Daten werden von der Plattform gemäß ihrer eigenen Richtlinie verarbeitet.</li></ul><h3>3.3. itch.io und andere Shops</h3><p>Downloads, Käufe, Zahlungen und Konten werden von itch.io und anderen Shops gemäß deren Richtlinien abgewickelt. Wir können aggregierte Statistiken sehen (z. B. Anzahl der Downloads oder Verkäufe), erhalten aber keine Kartendaten und haben keinen Zugriff auf Ihr Shop-Konto. Wenn Sie uns schreiben, erhalten wir Ihre Adresse und den Inhalt der Nachricht.</p><h3>3.4. E-Mail</h3><p>Wenn Sie an <a href="mailto:bullzar.games@proton.me">bullzar.games@proton.me</a> schreiben, erhalten wir Ihre Adresse, einen von Ihnen angegebenen Namen und den Inhalt der Nachricht. Wir verwenden sie nur zur Beantwortung und zum Support.</p>')}
+${sec(4,'Cookies und lokaler Speicher','<p>Wir verwenden keine Werbe- oder Tracking-Cookies. Cloudflare Turnstile kann technische Cookies setzen, die zur Absicherung des Formulars erforderlich sind. Drittanbieter-Seiten, auf die wir verlinken (itch.io, GitHub, Cloudflare), können eigene Cookies gemäß ihren Richtlinien verwenden.</p><table><thead><tr><th>Element</th><th>Typ</th><th>Zweck</th></tr></thead><tbody><tr><td><code>spaPath</code> (sessionStorage)</td><td>Funktional</td><td>Bringt Sie zur vorgesehenen Seite</td></tr><tr><td><code>site-locale</code> (localStorage)</td><td>Funktional</td><td>Merkt sich Ihre Sprache</td></tr><tr><td>Spielstände</td><td>Lokal</td><td>Fortschritt, Einstellungen, Erfolge</td></tr><tr><td>Turnstile</td><td>Technisch</td><td>Bot-Schutz für das Formular</td></tr></tbody></table>')}
+${sec(5,'Rechtsgrundlagen (DSGVO / UK GDPR)','<ul><li><strong>Berechtigte Interessen</strong> — Betrieb, Sicherung und Verbesserung der Website und der Spiele.</li><li><strong>Einwilligung</strong> — wenn Sie die optionale Analyse aktivieren oder aus eigener Initiative Kontakt aufnehmen.</li><li><strong>Gesetzliche Verpflichtung</strong> — wenn die Verarbeitung gesetzlich erforderlich ist.</li></ul>')}
+${sec(6,'Weitergabe an Dritte','<p>Wir verkaufen oder vermieten keine personenbezogenen Daten. Daten können von Anbietern verarbeitet werden, die die Website betreiben und die Spiele vertreiben:</p><ul><li><strong>GitHub</strong> — Website-Hosting (<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">Richtlinie</a>).</li><li><strong>Cloudflare</strong> — Web-Analyse und Turnstile (<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Richtlinie</a>).</li><li><strong>itch.io</strong> — Spieledistribution und Zahlungen (<a href="https://itch.io/docs/legal/privacy-policy" target="_blank" rel="noopener">Richtlinie</a>).</li><li><strong>Proton Mail</strong> — E-Mail (<a href="https://proton.me/legal/privacy" target="_blank" rel="noopener">Richtlinie</a>).</li></ul><p>Wir können Informationen offenlegen, wenn dies gesetzlich, durch eine gerichtliche Anordnung oder zum Schutz von Rechten und Sicherheit erforderlich ist.</p>')}
+${sec(7,'Speicherdauer','<ul><li>Technische Logs — gemäß den Richtlinien der Hosting- und Analyseanbieter.</li><li>E-Mails — so lange wie nötig, um zu antworten und Support zu leisten, danach gelöscht.</li><li>Lokale Daten — bis Sie sie auf Ihrem Gerät löschen.</li></ul>')}
+${sec(8,'Ihre Rechte','<p>Je nach Jurisdiktion können Sie das Recht haben, auf Ihre Daten zuzugreifen, sie zu berichtigen, zu löschen oder einzuschränken, der Verarbeitung zu widersprechen, eine portable Kopie zu erhalten, die Einwilligung zu widerrufen und Beschwerde bei einer Aufsichtsbehörde einzureichen. Für Anfragen schreiben Sie an <a href="mailto:bullzar.games@proton.me">bullzar.games@proton.me</a>; wir antworten in angemessener Zeit.</p><p>Für von itch.io verarbeitete Daten (Konto, Käufe) wenden Sie sich bitte direkt an itch.io.</p>')}
+${sec(9,'Kinder','<p>Unsere Spiele eignen sich für Spieler jeden Alters; wir erheben nicht wissentlich personenbezogene Daten von Kindern und fragen nicht nach dem Alter. Wenn Sie glauben, dass ein Kind uns personenbezogene Daten übermittelt hat, kontaktieren Sie uns und wir löschen sie.</p>')}
+${sec(10,'Internationale Übermittlung','<p>Dienstanbieter können Daten außerhalb Ihres Landes verarbeiten. Solche Übermittlungen beruhen auf gesetzlich anerkannten Garantien (z. B. Standardvertragsklauseln) und sind auf das für den Betrieb der Dienste Notwendige beschränkt.</p>')}
+${sec(11,'Sicherheit','<p>Wir treffen angemessene technische und organisatorische Maßnahmen zum Schutz der Informationen. Allerdings ist keine Übertragungs- oder Speichermethode vollständig sicher.</p>')}
+${sec(12,'Änderungen','<p>Die aktuelle Version ist jederzeit auf dieser Seite verfügbar; das Aktualisierungsdatum ist oben angegeben. Bei wesentlichen Änderungen veröffentlichen wir die aktualisierte Richtlinie hier und geben gegebenenfalls zusätzliche Hinweise.</p>')}
+${sec(13,'Kontakt','<p>Bei Fragen zum Datenschutz: <a href="mailto:bullzar.games@proton.me">bullzar.games@proton.me</a>.</p>')}
+`;
+
+// Chinese
+CONTENT.zh = `
+${sec(1,'概述','<p>本隐私政策说明 Bullzar Games（「我们」）如何处理与网站 <a href="https://bullzargames.github.io/">bullzargames.github.io</a>、工作室的游戏及其他项目（包括 Bao Boom）以及相关页面有关的信息。本政策适用于 Bullzar Games 的所有项目。</p><p>使用本网站或游戏即表示您同意下述做法。如不同意，请勿使用本网站或游戏。</p>')}
+${sec(2,'我们是谁','<p>Bullzar Games 是一个独立工作室（单人开发者）。我们是自行处理的信息的控制者。如有隐私问题或数据请求，请写信至 <a href="mailto:bullzar.games@proton.me">bullzar.games@proton.me</a>。</p>')}
+${sec(3,'我们处理的信息','<h3>3.1. 网站</h3><ul><li>我们不创建账户，也不运行向我们服务器发送数据的表单。联系表单会打开您的邮件客户端；只有您自己发送才会发出消息。</li><li><strong>GitHub Pages 托管</strong>会自动处理技术数据（IP 地址、请求日期与时间、请求的 URL、User-Agent、referrer）以交付页面并防止滥用。</li><li><strong>Cloudflare Web Analytics</strong> 提供聚合的匿名统计（页面浏览、来源、国家、设备类型）。它不使用 cookie，也不跨网站追踪您。</li><li><strong>Cloudflare Turnstile</strong> 验证联系表单由真人填写。它会处理您的 IP 地址和技术性浏览器信号。</li><li><strong>浏览器本地存储</strong> — <code>sessionStorage</code>（键 <code>spaPath</code>）用于站内导航，<code>localStorage</code>（键 <code>site-locale</code>）用于语言选择。这些数据保存在您的设备上。</li></ul><h3>3.2. 游戏（Windows、Linux、macOS、Android、Web）</h3><ul><li>游戏无需账户，也不会向我们发送个人数据。</li><li>设置、进度、成就与最高分<strong>保存在您的设备本地</strong>。您可通过操作系统或浏览器删除它们。</li><li>我们页面上的 Web 构建已禁用分析。如果在游戏设置中启用可选的匿名统计且特定构建支持，会发送匿名事件（启动、关卡完成、错误），不包含姓名、邮箱或广告标识符。</li><li>面向游戏平台的版本（例如 Yandex Games、CrazyGames）可能使用平台 SDK、广告与云存档。此类数据由平台按其自身政策处理。</li></ul><h3>3.3. itch.io 与其他商店</h3><p>下载、购买、支付与账户由 itch.io 及其他商店按其政策处理。我们可能看到聚合统计（例如下载或销售数量），但不会收到您的银行卡信息，也无法访问您的商店账户。如果您给我们写信，我们会收到您的地址与消息内容。</p><h3>3.4. 电子邮件</h3><p>如果您写信至 <a href="mailto:bullzar.games@proton.me">bullzar.games@proton.me</a>，我们会收到您的地址、您提供的姓名及消息内容。我们仅用于回复与支持。</p>')}
+${sec(4,'Cookie 与本地存储','<p>我们不使用广告或追踪 cookie。Cloudflare Turnstile 可能设置保护表单所需的的技术性 cookie。我们链接的第三方网站（itch.io、GitHub、Cloudflare）可能按其政策使用各自的 cookie。</p><table><thead><tr><th>项目</th><th>类型</th><th>用途</th></tr></thead><tbody><tr><td><code>spaPath</code> (sessionStorage)</td><td>功能</td><td>返回到预期页面</td></tr><tr><td><code>site-locale</code> (localStorage)</td><td>功能</td><td>记住您的语言</td></tr><tr><td>游戏存档</td><td>本地</td><td>进度、设置、成就</td></tr><tr><td>Turnstile</td><td>技术</td><td>表单的机器人防护</td></tr></tbody></table>')}
+${sec(5,'法律依据（GDPR / 英国 GDPR）','<ul><li><strong>正当利益</strong> — 运营、保障与改进网站与游戏。</li><li><strong>同意</strong> — 当您启用可选分析或主动联系我们时。</li><li><strong>法律义务</strong> — 处理为法律所要求时。</li></ul>')}
+${sec(6,'与第三方共享','<p>我们不出售或出租个人数据。数据可能由运营网站与分发游戏的提供商处理：</p><ul><li><strong>GitHub</strong> — 网站托管（<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">政策</a>）。</li><li><strong>Cloudflare</strong> — Web 分析与 Turnstile（<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">政策</a>）。</li><li><strong>itch.io</strong> — 游戏分发与支付（<a href="https://itch.io/docs/legal/privacy-policy" target="_blank" rel="noopener">政策</a>）。</li><li><strong>Proton Mail</strong> — 电子邮件（<a href="https://proton.me/legal/privacy" target="_blank" rel="noopener">政策</a>）。</li></ul><p>在法律、法院命令或保护权利与安全需要时，我们可能披露信息。</p>')}
+${sec(7,'保留期限','<ul><li>技术日志 — 按托管与分析提供商的政策。</li><li>电子邮件 — 为回复与支持所需的时间，之后删除。</li><li>本地数据 — 直到您在设备上删除。</li></ul>')}
+${sec(8,'您的权利','<p>根据您的司法管辖区，您可能有权访问、更正、删除或限制您的数据，反对处理，获取可携带副本，撤回同意，以及向监管机构投诉。如需提出请求，请写信至 <a href="mailto:bullzar.games@proton.me">bullzar.games@proton.me</a>；我们将在合理时间内回复。</p><p>对于 itch.io 处理的数据（账户、购买），请直接联系 itch.io。</p>')}
+${sec(9,'儿童','<p>我们的游戏适合任何年龄的玩家；我们不会故意收集儿童的个人数据，也不会询问年龄。如果您认为儿童向我们提供了个人数据，请联系我们，我们将删除。</p>')}
+${sec(10,'国际传输','<p>服务提供商可能在您的国家/地区之外处理数据。此类传输依赖法律认可的保障措施（例如标准合同条款），并仅限于运营服务所需范围。</p>')}
+${sec(11,'安全','<p>我们采取合理的技术与组织措施保护信息。然而，没有任何传输或存储方式是完全安全的。</p>')}
+${sec(12,'变更','<p>当前版本始终可在本页查看；更新日期显示在顶部。对于重大变更，我们将在此发布更新后的政策，并在必要时提供额外通知。</p>')}
+${sec(13,'联系','<p>如有任何隐私问题： <a href="mailto:bullzar.games@proton.me">bullzar.games@proton.me</a>。</p>')}
+`;
+
+function getLocale() {
+  try { const v = localStorage.getItem('site-locale'); if (v && LOCALES.some(l=>l.code===v)) return v; } catch(e){}
+  return 'en';
+}
+function setLocale(code) {
+  try { localStorage.setItem('site-locale', code); } catch(e){}
+  render(code);
+}
+function render(code) {
+  const m = META[code];
+  const contentEl = document.getElementById('content');
+  const tocEl = document.getElementById('toc');
+  // animate out
+  contentEl.style.transition = 'opacity 0.25s ease, transform 0.25s ease';
+  tocEl.style.transition = 'opacity 0.25s ease, transform 0.25s ease';
+  contentEl.style.opacity = '0';
+  contentEl.style.transform = 'translateY(12px)';
+  tocEl.style.opacity = '0';
+  tocEl.style.transform = 'translateY(12px)';
+  setTimeout(() => {
+    document.documentElement.lang = code;
+    document.title = m.title + ' — Bullzar Games';
+    document.getElementById('title').textContent = m.title;
+    document.getElementById('lead').textContent = m.lead;
+    document.getElementById('metaDate').textContent = m.date;
+    document.getElementById('langCode').textContent = LOCALES.find(l=>l.code===code).label;
+    contentEl.innerHTML = CONTENT[code];
+    tocEl.innerHTML = '<p>' + m.toc + '</p><ol>' + SECTIONS[code].map((t,i)=>'<li><a href="#s'+(i+1)+'">'+t+'</a></li>').join('') + '</ol>';
+    document.querySelectorAll('.lang-switch__option').forEach(el=>{
+      el.classList.toggle('lang-switch__option--active', el.dataset.code===code);
+    });
+    // animate in
+    requestAnimationFrame(() => {
+      contentEl.style.opacity = '1';
+      contentEl.style.transform = 'translateY(0)';
+      tocEl.style.opacity = '1';
+      tocEl.style.transform = 'translateY(0)';
+    });
+  }, 260);
+}
+
+// Build language menu
+const menu = document.getElementById('langMenu');
+LOCALES.forEach(l=>{
+  const li = document.createElement('li');
+  li.className = 'lang-switch__option';
+  li.dataset.code = l.code;
+  li.innerHTML = '<span class="lang-switch__code">'+l.label+'</span><span class="lang-switch__native">'+l.native+'</span>';
+  li.addEventListener('click', ()=>{ setLocale(l.code); menu.style.display='none'; });
+  menu.appendChild(li);
+});
+const btn = document.getElementById('langBtn');
+btn.addEventListener('click', (e)=>{ e.stopPropagation(); menu.style.display = menu.style.display==='none' ? 'block' : 'none'; });
+document.addEventListener('click', (e)=>{ if(!btn.contains(e.target) && !menu.contains(e.target)) menu.style.display='none'; });
+
+render(getLocale());
+</script>
+</body>
+</html>
+"
