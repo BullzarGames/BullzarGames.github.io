@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <title>Bullzar Games Dragon Emblem</title>
+  <defs>
+    <linearGradient id="dragon-orange" x1="24" y1="18" x2="104" y2="112" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFB14A"/>
+      <stop offset=".52" stop-color="#FF6A1A"/>
+      <stop offset="1" stop-color="#C9360B"/>
+    </linearGradient>
+    <linearGradient id="dragon-steel" x1="34" y1="28" x2="94" y2="98" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#68717C"/>
+      <stop offset="1" stop-color="#242A32"/>
+    </linearGradient>
+  </defs>
+
+  <path d="M25 12L48 25L64 20L80 25L103 12L97 38L109 53L99 88L82 106L64 119L46 106L29 88L19 53L31 38Z"
+        fill="#11151A" stroke="url(#dragon-orange)" stroke-width="3" stroke-linejoin="round"/>
+
+  <path d="M31 22L49 34L59 31L43 49L27 43Z"
+        fill="url(#dragon-steel)" stroke="#FF7827" stroke-width="1.5" stroke-linejoin="round"/>
+
+  <path d="M97 22L79 34L69 31L85 49L101 43Z"
+        fill="url(#dragon-steel)" stroke="#FF7827" stroke-width="1.5" stroke-linejoin="round"/>
+
+  <path d="M49 34L64 28L79 34L73 50L64 58L55 50Z"
+        fill="#20262D" stroke="url(#dragon-orange)" stroke-width="2" stroke-linejoin="round"/>
+
+  <path d="M43 49L56 55L51 69L35 79L28 56Z"
+        fill="url(#dragon-steel)" stroke="#FF7827" stroke-width="1.5" stroke-linejoin="round"/>
+
+  <path d="M85 49L72 55L77 69L93 79L100 56Z"
+        fill="url(#dragon-steel)" stroke="#FF7827" stroke-width="1.5" stroke-linejoin="round"/>
+
+  <path d="M56 55L64 60L72 55L77 77L64 92L51 77Z"
+        fill="#171C22" stroke="url(#dragon-orange)" stroke-width="2" stroke-linejoin="round"/>
+
+  <path d="M40 59L52 63L46 69L36 68Z" fill="#FF8A32"/>
+  <path d="M88 59L76 63L82 69L92 68Z" fill="#FF8A32"/>
+
+  <path d="M55 78L64 84L73 78L68 91L64 95L60 91Z"
+        fill="#FF6A1A"/>
+
+  <path d="M35 84L49 94L57 106L45 99Z"
+        fill="#59616B" stroke="#FF7B2C" stroke-width="1"/>
+
+  <path d="M93 84L79 94L71 106L83 99Z"
+        fill="#59616B" stroke="#FF7B2C" stroke-width="1"/>
+
+  <path d="M64 99L64 112" stroke="#FF8A32" stroke-width="2" stroke-linecap="round"/>
+</svg>

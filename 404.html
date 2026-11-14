@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    (function () {
+      try {
+        sessionStorage.setItem('spaPath', window.location.pathname);
+        sessionStorage.setItem('spaHash', window.location.hash);
+      } catch (e) {}
+      window.location.replace('/' + (window.location.hash || ''));
+    })();
+  </script>
+  <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b21cc388a63a41fdb7a3f12f764a2267"}'></script><!-- End Cloudflare Web Analytics -->
+</head>
+<body></body>
+</html>

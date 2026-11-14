@@ -1,0 +1,72 @@
+<!doctype html>
+<html style="background-color:#06080a" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0c0f" />
+    <meta name="description" content="Bao Boom is a 3D arcade game in Godot 4.4: you are a small dragon in a lantern-lit Chinese town the night before a festival. The guards stole the celebration, and you light every firework on the map before they catch you. 100 levels, 10 districts, one-touch controls, a tail that keeps growing. These are the technical problems that were not simple." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://bullzargames.github.io/devlog/baoboom-devlog-1/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Bullzar Games" />
+  <meta property="og:title" content="100 generated city levels, a dragon with no skeleton, and music synthesized from numpy (Godot 4 devlog) — Bullzar Games" />
+  <meta property="og:description" content="Bao Boom is a 3D arcade game in Godot 4.4: you are a small dragon in a lantern-lit Chinese town the night before a festival. The guards stole the celebration, and you light every firework on the map before they catch you. 100 levels, 10 districts, one-touch controls, a tail that keeps growing. These are the technical problems that were not simple." />
+  <meta property="og:url" content="https://bullzargames.github.io/devlog/baoboom-devlog-1/" />
+  <meta property="og:image" content="https://bullzargames.github.io/images/logo-rast.jpeg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="100 generated city levels, a dragon with no skeleton, and music synthesized from numpy (Godot 4 devlog) — Bullzar Games" />
+  <meta name="twitter:description" content="Bao Boom is a 3D arcade game in Godot 4.4: you are a small dragon in a lantern-lit Chinese town the night before a festival. The guards stole the celebration, and you light every firework on the map before they catch you. 100 levels, 10 districts, one-touch controls, a tail that keeps growing. These are the technical problems that were not simple." />
+  <meta name="twitter:image" content="https://bullzargames.github.io/images/logo-rast.jpeg" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Bullzar Games",
+        "url": "https://bullzargames.github.io/",
+        "logo": "https://bullzargames.github.io/images/logo-rast.jpeg",
+        "email": "bullzar.games@proton.me"
+      },
+      {
+        "@type": "WebSite",
+        "name": "Bullzar Games",
+        "url": "https://bullzargames.github.io/",
+        "description": "Bullzar Games is an independent game studio crafting distinct worlds and original gameplay.",
+        "inLanguage": ["en","ru","fr","es","de","zh"]
+      }
+    ]
+  }
+  </script>
+    <link rel="icon" type="image/jpeg" href="/images/logo-rast.jpeg?v=mwg4ucas" />
+    <title>100 generated city levels, a dragon with no skeleton, and music synthesized from numpy (Godot 4 devlog) — Bullzar Games</title>
+    <meta property="og:image" content="/images/logo-rast.jpeg?v=mwg4ucas">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="/images/logo-rast.jpeg?v=mwg4ucas">
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b21cc388a63a41fdb7a3f12f764a2267"}'></script><!-- End Cloudflare Web Analytics -->
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script type="module" crossorigin src="/assets/index-Ci9kkFlm.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/isRecord-Kfmt-nk--BGze3w87.js">
+  <link rel="stylesheet" crossorigin href="/assets/index-BlC3kDiY.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"100 generated city levels, a dragon with no skeleton, and music synthesized from numpy (Godot 4 devlog)","description":"Bao Boom is a 3D arcade game in Godot 4.4: you are a small dragon in a lantern-lit Chinese town the night before a festival. The guards stole the celebration, and you light every firework on the map before they catch you. 100 levels, 10 districts, one-touch controls, a tail that keeps growing. These are the technical problems that were not simple.","url":"https://bullzargames.github.io/devlog/baoboom-devlog-1/","datePublished":"2026-11-09"}</script>
+</head>
+  <body style="background-color:#06080a;margin:0">
+    <div id="app"><div style="min-height:100vh;background:#06080a;color:#c9d1d9;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;padding:2rem;box-sizing:border-box">
+  <main style="max-width:900px;margin:0 auto;padding-top:3rem">
+    <nav aria-label="Breadcrumb" style="font-family:ui-monospace,Menlo,monospace;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;margin:0 0 1.5rem"><a href="https://bullzargames.github.io/" style="color:#8b949e;text-decoration:none">Home</a> <span style="color:#ff6a1a;opacity:.45">/</span> <a href="https://bullzargames.github.io/devlog/" style="color:#8b949e;text-decoration:none">Devlog</a> <span style="color:#ff6a1a;opacity:.45">/</span> <span style="color:#ffb27a">100 generated city levels, a dragon with no skeleton, and music synthesized from numpy (Godot 4 devlog)</span></nav>
+    
+    <p style="color:#ff6a1a;text-transform:uppercase;letter-spacing:.14em;font-size:.75rem;margin:0 0 .75rem">2026-11-09</p>
+    <h1 style="color:#f0f3f6;font-size:clamp(1.8rem,4vw,3rem);margin:0 0 1rem">100 generated city levels, a dragon with no skeleton, and music synthesized from numpy (Godot 4 devlog)</h1>
+    <p>I&#39;m making Bao Boom, a 3D arcade game in Godot 4.4: you&#39;re a small dragon in a lantern-lit Chinese town the night before a festival. The guards stole the celebration, and you light every firework on the map before they catch you. 100 levels, 10 districts, one-touch controls, a tail that keeps growing.</p>
+<p>The premise is simple. These are the technical problems that weren&#39;t.</p>
+<p>1. The firework you can&#39;t see — The camera looks from the south and above, which reads great until a tall building stands between the camera and the thing you need to find. A firework could sit three cells away and be completely invisible. Fix: an &#39;open cell&#39; rule in the item placer. A firework counts as visible only if the two cells south of it (y+1, y+2) are free and there&#39;s room on the sides. Otherwise the position is rejected. Level design turned out to depend on the view, not just the walkability graph.</p>
+<p>2. 100 levels, none placed by hand — Levels are plain JSON grids (2 m per cell: # building, . street, F firework, P start…). A Python generator builds districts, buildings, squares, a guard pen with gates. Then a validator runs on all 100 and fails the build on: disconnected streets, dead ends, unreachable items, huge empty plazas or too-narrow passages. First pass had 56% building density and felt claustrophobic. A thinning script removes buildings from merged blocks and carves passages, re-validating after every step. Result: 47% density, same guarantees.</p>
+<p>3. A dragon with no skeleton — The body is rebuilt every frame along the head&#39;s recorded path, with procedural meshes, and legs use simple IK. It bends instead of looking like a chain of beads. Controls were the real pain: on a grid, players don&#39;t aim at cells. Corner assist nudges the dragon into the opening when it clips a corner (up to ~0.95 m), and wall collision radius cut from 0.8 to 0.55 m while keeping the guard-catch radius at 0.8. Forgiving, but still fair.</p>
+<p>4. Guards that don&#39;t twitch — Grid AI changes heading instantly when its target changes, and it looks broken. Capping the turn rate and adding smooth braking near gates fixed it — guards became readable, you can predict where they&#39;ll turn.</p>
+<p>5. Music and textures from scripts — There are no audio files from outside the project. A script synthesizes pentatonic tracks (plucked guzheng, bowed erhu with glissando/vibrato, bass pluck, taiko, wood block) with numpy/scipy — one slow menu track plus five rhythmic level tracks. World textures are scripted too, so the whole look can be regenerated with one command.</p>
+<p>Three scars — Level map ran at ~7 FPS on a laptop, caused by an earlier &#39;optimization&#39;. Fix: bake the background (sky, silhouettes, gates, trees) into one texture. Web build without threads (so it runs where cross-origin isolation isn&#39;t available): baked HUD frames/icons into textures, redraw the minimap less often, put distant objects to sleep, skip decor on weak devices. The demo is the same code as the full game, behind a build flag (10 of 100 levels, 2 of 8 skins). Demo contents are frozen and verified by a script, so nothing changes by accident.</p>
+    <p style="margin-top:2rem"><a href="https://bullzargames.github.io/devlog/" style="color:#ffb27a">All devlog entries — Bullzar Games</a></p>
+  </main>
+</div></div>
+  </body>
+</html>

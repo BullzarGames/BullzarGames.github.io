@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bullzargames.github.io/sitemap.xml
